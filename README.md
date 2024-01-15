@@ -1,5 +1,5 @@
 # The Mathematical Foundations of Machine Learning
-This repository contains the code for the course "The Mathematical Foundations of Machine Learning" at the University of Arkansas. The course is taught by Dr. Jiahui Chen. The course website can be found [here](https://jiahuic.github.io/).
+This repository contains the code for the course "The Mathematical Foundations of Machine Learning" at the University of Arkansas. The course is taught by Dr. Jiahui Chen. The course website can be found [here](https://jiahuic.github.io/teaching/math-499v599v/).
 
 ## Getting Started
 
@@ -13,8 +13,8 @@ This repository contains the code for the course "The Mathematical Foundations o
    - Use the command: `git clone your-forked-repo-url`.
 
 3. **Stay Updated:**
-   - Occasionally, new content or updates might be added to the central `MATH-V449-Coursework` repository.
-   - Sync your fork with the central repository regularly to ensure you have the latest updates. Instructions for syncing are provided in the `Syncing a Fork` guide.
+   - Occasionally, new content or updates might be added to the central `MATH-449V-599V-MFML` repository.
+   - Sync your fork with the central repository regularly to ensure you have the latest updates. Instructions for syncing are provided in the [`Syncing a Fork`](labs/lab0.md#task3) guide.
 
 4. **Working on Assignments:**
    - Complete your assignments within the respective directories in your forked repository.

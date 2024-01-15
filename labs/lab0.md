@@ -33,6 +33,17 @@ Asking for a "chain of thought" before an answer can help the model reason its w
 #### 4. Test changes systematically
 Improving performance is easier if you can measure it. In some cases a modification to a prompt will achieve better performance on a few isolated examples but lead to worse overall performance on a more representative set of examples. Therefore to be sure that a change is net positive to performance it may be necessary to define a comprehensive test suite (also known an as an "eval").
 
+## Editor
+We will use [Visual Studio Code](https://code.visualstudio.com/) as our main editor. You can download the latest version of Visual Studio Code from [here](https://code.visualstudio.com/). Please read the installation documents on the Visual Studio Code website for your own Operation System (i.e. Windows OS, Mac OS, or linux).
+
+PyCharm is another option for Python development. You can download the latest version of PyCharm from [here](https://www.jetbrains.com/pycharm/). Please read the installation documents on the PyCharm website for your own Operation System (i.e. Windows OS, Mac OS, or linux). However, as I am not familiar with PyCharm myself, I cannot assist with any problems that may arise.
+
+Vim/NeoVim is another option for Python development. You can download the latest version of Vim from [here](https://www.vim.org/). Please read the installation documents on the Vim website for your own Operation System (i.e. Windows OS, Mac OS, or linux).
+
+## Python
+We will use [Python](https://www.python.org/) as our main programming language. You can download the latest version of Python from [Anaconda](https://www.anaconda.com/). Please read the installation documents on the Anaconda website for your own Operation System (i.e. Windows OS, Mac OS, or linux).
+To test if you have installed Python successfully, you can open your terminal (MacOS) or Powershell (WinOS) and type `python --version`. If you see the version of Python, then you have installed Python successfully.
+
 ## Git and Gitlab
 We will use [Git](https://git-scm.com/) and [Gitlab](https://git.uark.edu/) for submitting your assignments.
 The submission format of your assignments will be text and python files. 
@@ -80,7 +91,7 @@ git push origin main
 
 Overall, the steps follow that you make changes to your local repo, add the changes to the staging area, commit the changes, and push the changes to your forked repository. You can check the changes on your forked repository at the GitLab website.
 
-### **Task 3: Practice Fork repository and Pull request**
+### <a name="task3"></a>**Task 3: Practice Fork repository and Pull request**
 The third task is to practice the fork repository and pull request. You can use the following commands to practice fork repository and pull request as I will update the code in the center repository.
 To check if the central (upstream) repository has been updated since you forked or last updated your repository, you can follow these steps:
 
