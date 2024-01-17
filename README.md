@@ -30,6 +30,7 @@ This repository contains the code for the course "The Mathematical Foundations o
 - [**Labs**](./labs) contains the 10 labs for this course. Each lab is a Jupyter notebook with the solutions to the problems and contributes 4% of your final score.
 - [**Code**](./code) contains the code for this course.
 - [**Datasets**](./datasets) contains the data for this course.
+   - **MNIST**: The MNIST dataset is a large database of handwritten digits that is commonly used for training various image processing systems. The dataset is available [here](http://yann.lecun.com/exdb/mnist/).
 - **License**: This repository is licensed under the MIT license. See [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE) for details.
 
 ## Important Links
