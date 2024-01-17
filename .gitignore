@@ -1,5 +1,5 @@
 # Add your non-tracking files
-
+datasets/MNIST/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
