@@ -29,7 +29,7 @@ This repository contains the code for the course "The Mathematical Foundations o
 - [**Project**](./project): the project is a Jupyter notebook with the solutions to the problems and contributes 20% of your final score.
 - [**Labs**](./labs) contains the 10 labs for this course. Each lab is a Jupyter notebook with the solutions to the problems and contributes 4% of your final score.
 - [**Code**](./code) contains the code for this course.
-- [**Data**](./data) contains the data for this course.
+- [**Datasets**](./datasets) contains the data for this course.
 - **License**: This repository is licensed under the MIT license. See [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE) for details.
 
 ## Important Links
