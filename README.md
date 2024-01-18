@@ -27,10 +27,10 @@ This repository contains the code for the course "The Mathematical Foundations o
 ## Contents
 - [**Homework**](./homework): there are 4 homework assignments in this course. Each assignment is a Jupyter notebook with the solutions to the problems and contributes 10% of your final score.
 - [**Projects**](./projects): the project is a Jupyter notebook with the solutions to the problems and contributes 20% of your final score.
-- [**Labs**](./labs) contains the 10 labs for this course. Each lab is a Jupyter notebook with the solutions to the problems and contributes 4% of your final score.
-- [**Content**](./content) contains the in-class code and content for this course in `.ipynb` format.
-- [**Code**](./code) contains the code for this course in `.py` format.
-- [**Datasets**](./datasets) contains the data for this course.
+- [**Labs**](./labs): contains the 10 labs for this course. Each lab is a Jupyter notebook with the solutions to the problems and contributes 4% of your final score.
+- [**Content**](./content): contains the in-class code and content for this course in `.ipynb` format.
+- [**Code**](./code): contains the code for this course in `.py` format.
+- [**Datasets**](./datasets): contains the data for this course.
    - **MNIST**: The MNIST dataset is a large database of handwritten digits that is commonly used for training various image processing systems. The dataset is available [here](http://yann.lecun.com/exdb/mnist/).
 - **License**: This repository is licensed under the MIT license. See [![License](https://img.shields.io/badge/license-MIT-green)](./LICENSE) for details.
 
