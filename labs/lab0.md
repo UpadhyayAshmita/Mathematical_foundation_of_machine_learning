@@ -2,8 +2,10 @@
 It is recommended to install Python in your local machine. You can download the latest version of Python from [Anaconda](https://www.anaconda.com/). Please read the installation documents on the Anaconda website for your own Operation System (i.e. Windows OS, Mac OS, or linux).
 
 ## Discord
-We will use [Discord](https://discord.com/) as our main communication channel. Please join the [Discord server](https://discord.gg/) for this course. We will use the `#lab` channel for all labs.
+We will use [Discord](https://discord.com/) as our main communication channel. Please join the [Discord server](https://discord.gg/) for this course. We will use the `#labs` channel for all labs.
 Please use this adventage to get to know your classmates and ask questions about the course.
+
+**NOTE**: The Discord server is not set up yet. I will update the link here once it is set up.
 
 ## ChatGPT and Bard
 ChatGPT and Bard are two chatbots that can help you with your work.
@@ -33,23 +35,48 @@ Asking for a "chain of thought" before an answer can help the model reason its w
 #### 4. Test changes systematically
 Improving performance is easier if you can measure it. In some cases a modification to a prompt will achieve better performance on a few isolated examples but lead to worse overall performance on a more representative set of examples. Therefore to be sure that a change is net positive to performance it may be necessary to define a comprehensive test suite (also known an as an "eval").
 
-## Editor
-We will use [Visual Studio Code](https://code.visualstudio.com/) as our main editor. You can download the latest version of Visual Studio Code from [here](https://code.visualstudio.com/). Please read the installation documents on the Visual Studio Code website for your own Operation System (i.e. Windows OS, Mac OS, or linux).
-
-PyCharm is another option for Python development. You can download the latest version of PyCharm from [here](https://www.jetbrains.com/pycharm/). Please read the installation documents on the PyCharm website for your own Operation System (i.e. Windows OS, Mac OS, or linux). However, as I am not familiar with PyCharm myself, I cannot assist with any problems that may arise.
-
-Vim/NeoVim is another option for Python development. You can download the latest version of Vim from [here](https://www.vim.org/). Please read the installation documents on the Vim website for your own Operation System (i.e. Windows OS, Mac OS, or linux).
-
-## Python
-We will use [Python](https://www.python.org/) as our main programming language. You can download the latest version of Python from [Anaconda](https://www.anaconda.com/). Please read the installation documents on the Anaconda website for your own Operation System (i.e. Windows OS, Mac OS, or linux).
-To test if you have installed Python successfully, you can open your terminal (MacOS) or Powershell (WinOS) and type `python --version`. If you see the version of Python, then you have installed Python successfully.
-
 ## Git and Gitlab
 We will use [Git](https://git-scm.com/) and [Gitlab](https://git.uark.edu/) for submitting your assignments.
 The submission format of your assignments will be text and python files. 
 [Github](https://github.com) is another popular version control repository. However, we will use Gitlab for this course.
 
 **Note:** You need to install git in your local machine. You can download the latest version of git from [here](https://git-scm.com/downloads).
+
+### GitLab SSH Key
+You need to generate a ssh key for your Gitlab account. You can follow the instructions [here](https://docs.gitlab.com/ee/user/ssh.html) to generate a ssh key for your Gitlab account. You can use the following command to generate a ssh key.
+
+#### Generating an SSH Key
+
+1. **On Windows:**
+   - Open Git Bash (you can download it from [Git for Windows](https://gitforwindows.org/) if you don't have it).
+   - Use the command:
+     ```bash
+     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+     ```
+   - When prompted to "Enter a file in which to save the key," press Enter to accept the default file location.
+   - Enter a secure passphrase when prompted.
+
+2. **On MacOS:**
+   - Open the Terminal.
+   - Run the same command:
+     ```bash
+     ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+     ```
+   - Follow the prompts as above to choose a save location and passphrase.
+
+#### Adding the SSH Key to GitLab
+
+1. **Add the Key to GitLab:**
+   - Go to GitLab and sign in to your account.
+   - Click on your profile picture in the top right corner, then click on "Settings".
+   - In the User Settings sidebar, click on "SSH Keys".
+   - Paste your key into the "Key" field.
+   - Add a title in the "Title" field to help you identify the key (e.g., "MacBook Pro" or "Windows Desktop").
+   - Click "Add key".
+
+Once you've added your SSH key to GitLab, you should be able to perform Git operations over SSH, which is more secure and often more convenient than using HTTPS, especially for frequent Git users.
+
+Remember, the email you use in the `ssh-keygen` command should be the same one associated with your GitLab account. This helps in easily identifying the key's purpose and also in troubleshooting, should any issues arise with your GitLab connection.
 
 ### **Task 1: Create a Gitlab account and a repository for this course.**
 - **Step 1**: Use your UARK email and password to login to [Gitlab](https://git.uark.edu/).
@@ -91,7 +118,7 @@ git push origin main
 
 Overall, the steps follow that you make changes to your local repo, add the changes to the staging area, commit the changes, and push the changes to your forked repository. You can check the changes on your forked repository at the GitLab website.
 
-### <a name="task3"></a>**Task 3: Practice Fork repository and Pull request**
+### **Task 3: Practice Fork repository and Pull request**
 The third task is to practice the fork repository and pull request. You can use the following commands to practice fork repository and pull request as I will update the code in the center repository.
 To check if the central (upstream) repository has been updated since you forked or last updated your repository, you can follow these steps:
 
