@@ -2,10 +2,8 @@
 It is recommended to install Python in your local machine. You can download the latest version of Python from [Anaconda](https://www.anaconda.com/). Please read the installation documents on the Anaconda website for your own Operation System (i.e. Windows OS, Mac OS, or linux).
 
 ## Discord
-We will use [Discord](https://discord.com/) as our main communication channel. Please join the [Discord server](https://discord.gg/) for this course. We will use the `#labs` channel for all labs.
+We will use [Discord](https://discord.com/) as our main communication channel. Please join the [Discord server](https://discord.gg/VaaJHznX) for this course. We will use the `#labs` channel for all labs.
 Please use this adventage to get to know your classmates and ask questions about the course.
-
-**NOTE**: The Discord server is not set up yet. I will update the link here once it is set up.
 
 ## ChatGPT and Bard
 ChatGPT and Bard are two chatbots that can help you with your work.
