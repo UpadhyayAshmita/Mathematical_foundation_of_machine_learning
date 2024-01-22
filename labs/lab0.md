@@ -101,6 +101,7 @@ mkdir ./labs/lab0
 ```bash
 touch ./labs/lab0/README.md
 ```
+Or use your editor to create this file.
 - **Step 3**: Editor the `README.md` file. On the first line, type `# Lab 0`. On the second line, type `This is a lab for practicing Git commands.`. On the third line, type `Please type your name below.`. On the fourth line, type your name. For example, `John Doe`.
 - **Step 4**: Add the `README.md` file to the staging area. You can use the following command to add the `README.md` file to the staging area.
 ```bash
@@ -118,7 +119,7 @@ git push origin main
 
 Overall, the steps follow that you make changes to your local repo, add the changes to the staging area, commit the changes, and push the changes to your forked repository. You can check the changes on your forked repository at the GitLab website.
 
-<p style="color:red;"> NOTE: You can have the full credits after you finish the first two tasks. </p>
+NOTE: You can have the full credits after you finish the first two tasks.
 
 ### **Task 3: Practice Fork repository and Pull request**
 The third task is to practice the fork repository and pull request. You can use the following commands to practice fork repository and pull request as I will update the code in the center repository.
