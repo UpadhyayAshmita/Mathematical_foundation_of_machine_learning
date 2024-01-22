@@ -2,8 +2,10 @@
 It is recommended to install Python in your local machine. You can download the latest version of Python from [Anaconda](https://www.anaconda.com/). Please read the installation documents on the Anaconda website for your own Operation System (i.e. Windows OS, Mac OS, or linux).
 
 ## Discord
-We will use [Discord](https://discord.com/) as our main communication channel. Please join the [Discord server](https://discord.gg/VaaJHznX) for this course. We will use the `#labs` channel for all labs.
+We will use [Discord](https://discord.com/) as our main communication channel. Please join the [Discord server](https://discord.gg/) for this course. We will use the `#labs` channel for all labs.
 Please use this adventage to get to know your classmates and ask questions about the course.
+
+**NOTE**: The Discord server is not set up yet. I will update the link here once it is set up.
 
 ## ChatGPT and Bard
 ChatGPT and Bard are two chatbots that can help you with your work.
@@ -116,8 +118,11 @@ git push origin main
 
 Overall, the steps follow that you make changes to your local repo, add the changes to the staging area, commit the changes, and push the changes to your forked repository. You can check the changes on your forked repository at the GitLab website.
 
+<p style="color:red;"> NOTE: You can have the full credits after you finish the first two tasks. </p>
+
 ### **Task 3: Practice Fork repository and Pull request**
 The third task is to practice the fork repository and pull request. You can use the following commands to practice fork repository and pull request as I will update the code in the center repository.
+This case happens when your forked repository is both behind and ahead of the center repository, it means you have made changes that aren't in the upstream repository (ahead) and there are changes in the upstream repository that you don't have (behind). To synchronize your repository with the upstream while keeping your own commits, you can use a combination of `git fetch`, `git merge`, or `git rebase`.
 To check if the central (upstream) repository has been updated since you forked or last updated your repository, you can follow these steps:
 
 1. **Configure a Remote for the Upstream Repository:**
@@ -133,7 +138,6 @@ To check if the central (upstream) repository has been updated since you forked 
    git fetch upstream
    git merge upstream/main
    ```
-
 3. **Check the Status Against Upstream:**
    To see if your local branch is behind the upstream repository's branch, you can use:
    ```bash
@@ -154,17 +158,83 @@ To check if the central (upstream) repository has been updated since you forked 
    ```
    This command will list the commits present in the upstream `main` branch but not in your current branch. Again, replace `main` with the appropriate branch name if different.
 
+5. **Merge the Upstream Changes into Your Repository**
+   Now, you have a couple of choices on how to integrate these changes: [merging](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging) or [rebasing](https://git-scm.com/docs/git-rebase).
+
+   - Option 1: Merging
+       Merging is a non-destructive operation and will keep the history of your changes and the upstream changes. 
+       
+       First, switch to your main branch (if you're not already on it):
+       ```bash
+       git checkout main
+       ```
+       
+       Then, merge the changes from the upstream repository:
+       ```bash
+       git merge upstream/main
+       ```
+       
+       This command will create a new commit in your history that merges the two histories. If there are any merge conflicts, you'll need to resolve them. Use `git diff` in step 3 to check the difference.
+
+   - Option 2: Rebasing
+       Rebasing will place your changes on top of the upstream changes, resulting in a cleaner, linear history.
+       
+       First, switch to your main branch:
+       ```bash
+       git checkout main
+       ```
+       
+       Then, rebase your changes onto the upstream branch:
+       ```bash
+       git rebase upstream/main
+       ```
+       
+       During a rebase, you might encounter conflicts. Resolve them as they arise and continue the rebase process. After resolving conflicts, you can continue the rebase with `git rebase --continue`. Repeat this until the rebase is complete.
+
+6. Push Your Changes
+   If you've rebased, you'll need to force-push your changes back to your repository (since you've rewritten history):
+   ```bash
+   git push origin main --force
+   ```
+
+   If you merged, a regular push will suffice:
+   ```bash
+   git push origin main
+   ```
+
 - After completing these steps, your local branch should be synchronized with the upstream `main` branch. However, if you have local commits that are not in the upstream, they will still be present in your local branch.
 - If there are conflicts during the `git merge` step, you will need to resolve these conflicts manually before you can complete the merge.
 - It's a good practice to regularly fetch and merge changes from the upstream, especially before starting new work or pushing changes to your fork. This minimizes conflicts and keeps your fork up-to-date.
-- Remember to push these changes to your fork (remote repository on GitLab) after merging:
-  ```bash
-  git push origin main
-  ```
 
 By following these steps, you can easily keep track of any updates or changes that have been made to the central repository and ensure that your fork stays up-to-date with those changes.
 
+### Pull Request (PR)
+This is something beyond the scope of this lab. However, I would like to introduce this concept to you. You can read more about PR [here](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/about-pull-requests).
 
-<!-- **For me, check whether I can build a chatbot using LLAMA on discord.** -->
-<!-- git, langchain, not sure if I can use it for this course. -->
-<!-- check ollama -->
+Here's a breakdown of how pull requests work and their impact:
+
+1. **Scope of a Pull Request:**
+   - A pull request is essentially a request to merge one branch into another within the same repository or across forks.
+   - When you create a pull request, it is isolated to your own fork and the branch from which you're making the request.
+
+2. **Impact on Your Repository:**
+   - Within your repository, the pull request tracks the changes between the base branch (the one you want to merge into) and the compare branch (the one with your changes).
+   - The PR allows for discussion, review, and additional commits until it gets merged or closed.
+
+3. **No Direct Effect on Others' Repositories:**
+   - Your pull request does not directly affect the state of anyone else's repository until it is merged by a maintainer of the target repository.
+   - Other contributors will not see your changes in their own forks or clones unless they explicitly fetch and merge your branch into their own branches.
+
+4. **After Merging:**
+   - If your pull request is accepted and merged into the main repository (the upstream repository from which you forked), then your changes become part of that main repository.
+   - Once merged, other contributors can pull the changes from the main repository into their own forks or clones.
+
+5. **Best Practices:**
+   - Keep your PRs focused and small to facilitate easier review and quicker integration.
+   - Regularly sync your fork with the main repository to avoid merge conflicts.
+   - Engage in any discussion or requests for changes that arise during the PR review process.
+
+6. **Open PRs and Syncing:**
+   - If you're syncing your fork with the upstream repository while having an open pull request, ensure that your syncing process (merge or rebase) does not disrupt the PR. Typically, changes to other branches or unrelated commits won't affect the PR.
+
+In summary, your pull requests are confined to your own repository and the upstream repository you wish to merge your changes into. They provide a controlled environment for proposing changes, receiving feedback, and collaboratively refining your contributions.
