@@ -1,0 +1,6 @@
+Platform: Windows-10-10.0.22631-SP0
+OS: nt
+Environment: c:\Users\Ashmita\anaconda3\envs\math-499v-599v\python.exe
+CPU: Intel64 Family 6 Model 140 Stepping 1, GenuineIntel
+Memory: 7.800102233886719 GB
+Username: Ashmita
