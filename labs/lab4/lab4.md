@@ -3,7 +3,7 @@
 2. Apply PCA and t-SNE on the MNIST dataset. Try the test dataset. t-SNE is time-consuming, so you can use a subset of the dataset.
 3. Visualize the results of PCA and t-SNE.<br>
 4. Compare the results of PCA and t-SNE.<br>
-There are more dense colored point in tSNE than PCA which means that tSNE was able to capture the ense relationship of data in high dimenson to lower dimension however PCA couldn't.Since PCA focuses on preserving global structure and variance, it may not effectively capture the local relationships and clusters present in the data, resulting in a sparse distribution of colored dots.<br>
+There are more dense colored point in tSNE than PCA which means that tSNE was able to capture the dense relationship of data in high dimenson to lower dimension however PCA couldn't.Since PCA focuses on preserving global structure and variance, it may not effectively capture the local relationships and clusters present in the data, resulting in a sparse distribution of colored dots.<br>
 t-SNE plots tend to exhibit dense clusters of colored dots, reflecting the local similarities and groupings present in the original high-dimensional space.<br>
 
 5. Discuss the pros and cons of PCA and t-SNE.
