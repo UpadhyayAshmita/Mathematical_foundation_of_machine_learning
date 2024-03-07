@@ -19,15 +19,33 @@ The table below provides a training data set containing six observations, three 
 Suppose we wish to use this data set to make a prediction for $Y$ when $X1 = X2 = X3 = 0$ using K-nearest neighbors. <br>
 (a) Compute the Euclidean distance between each observation and the test point, $X1 = X2 = X3 = 0$. <br>
 (b) What is our prediction with K = 1? Why? <br>
+- with k=1, we select the observation closest to test point., i.e., the closest observation is obs 5(green). Therefore, our prediction is green.<br>
+
 (c) What is our prediction with K = 3? Why? <br>
+- with k=3, we select closest three obs. The closest three obs are 5(green), 2(Red), and 6(red). Among these, red is majority so our prediction is Red.<br>
+
 (d) If the Bayes decision boundary in this problem is highly non-linear, then would we expect the best value for K to be large or small? Why? <br>
+- if the bayes decision boundary is non-linear we would expect best value for K to be small. This is because smaller k value results in more flexible decision boundaries, which can capture non-linear relationships.
 
 ### Question 2
 Carefully explain the differences between the KNN classifier and the KNN regression methods. <br>
+- KNN Classifier:<br>
+* Used for classification tasks where the output variable is categorical.<br>
+* Predicts the class of a data point by finding the majority class among its k nearest neighbors.<br>
+* Works well with discrete data and classification problems with non-linear decision boundaries.<br>
+* The output is a class label.<br>
+
+KNN Regression:<br>
+* Used for regression tasks where the output variable is continuous.<br>
+* Predicts the value of a data point by averaging the values of its k nearest neighbors.<br>
+* Works well with continuous data and regression problems with non-linear relationships.<br>
+* The output is a numerical value representing the predicted target variable.<br>
 
 ### Question 3
 We cover the SNE, symmetric SNE and t-SNE in the class.
 * (a) What does the SNE algorithm try to minimize? <br>
+- SNE minimizes the difference between the distances of points in high-dimensional space and their projections in low-dimensional space, aiming to preserve local and global structure within the data.<br>
+
 * (b) Calculate the gradient of the SNE cost function with respect to $y_i$. <br>
 * (c) Calculate the gradient of the symmetric SNE cost function with respect to $y_i$. <br>
 * (d) Calculate the gradient of the t-SNE cost function with respect to $y_i$. <br>
