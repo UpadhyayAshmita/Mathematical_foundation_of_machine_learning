@@ -18,6 +18,15 @@ There are 29 datasets generated from real applications. Choose one dataset as th
 25. Binding energy, 26. Toxicity, 27. Slvation, 28. Coil-20, 29. USPS
 ```
 
+#### Tasks
+1. After the 1-on-1 meeting with the instructor, you need to know what type of problem you are going to solve, regression or classification or clustering.
+2. Check your dataset and think about each feature. What if the feature is word or text? What if the feature is image? What if the feature is time series?
+3. To start the project, under your gitlab repository folder `projects`, create the following files/folders:
+   - `projects/readme.md`: A file to describe your project, your target dataset, and your plan. In the end, you should also put your results in this markdown file.
+   - `projects/data`: A folder to put your dataset.
+   - `projects/src`: A folder to put your code. The code loads the dataset, preprocesses the dataset, trains the model, and analyze the models.
+4. The project follows the following steps:
+
 ### Project 2 
 There are some topics that we don't cover in this semester. You can choose one of the following topics and do a project on it. 
 The requirement of this project is a little bit different since you don't work on a dataset specifically. 
