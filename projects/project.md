@@ -20,12 +20,26 @@ There are 29 datasets generated from real applications. Choose one dataset as th
 
 #### Tasks
 1. After the 1-on-1 meeting with the instructor, you need to know what type of problem you are going to solve, regression or classification or clustering.
+   - Classification methods: Logistic Regression, Random Forest, Gradient Boosting Decision Tree, SVM, KNN
+   - Regression methods: Linear Regression (Ridge Regression, Lasso Regression), SVM, Random Forest, Gradient Boosting Decision Tree
 2. Check your dataset and think about each feature. What if the feature is word or text? What if the feature is image? What if the feature is time series?
 3. To start the project, under your gitlab repository folder `projects`, create the following files/folders:
    - `projects/readme.md`: A file to describe your project, your target dataset, and your plan. In the end, you should also put your results in this markdown file.
-   - `projects/data`: A folder to put your dataset.
-   - `projects/src`: A folder to put your code. The code loads the dataset, preprocesses the dataset, trains the model, and analyze the models.
+   - `projects/data/`: A folder to put your dataset.
+   - `projects/src/`: A folder to put your code. The code loads the dataset, preprocesses the dataset, trains the model, and analyze the models.
 4. The project follows the following steps:
+   - Load the dataset: you need to load the dataset and check the basic information of the dataset.
+   - Preprocess the dataset: you need to preprocess the dataset. The preprocessing includes checking word or text features, and time series.
+   - Time series: if your dataset is time series, we will cover the Long Short-Term Memory (LSTM) model. You need to use the LSTM model to predict the future. This is optional.
+   - Preprocess the dataset also includes splitting the training dataset by 10-fold cross-validation.
+   - Train the model: you need to train the model using the methods we covered in this semester. You need to compare the results of different methods. For each methods, you need to employ the 10-fold cross-validation on the training set. Using the grid search to find the optimized parameters (for-loop). Once the parameters are fixed, evaluate the model on the test set and compare the methods with other methods.
+   - Analyze the model: you need to analyze the model. You need to check the feature importance, the confusion matrix, the ROC curve, the precision-recall curve, and the accuracy or RMSE.
+5. Write a short report to explain your project in `projects/readme.md`. The report should include the following:
+   - Introduction: describe the dataset and the problem you are going to solve.
+   - Preprocessing: describe the preprocessing of the dataset.
+   - Methods: describe the methods you used in the project.
+   - Results: describe the results of the project.
+   - Conclusion: describe the conclusion of the project.
 
 ### Project 2 
 There are some topics that we don't cover in this semester. You can choose one of the following topics and do a project on it. 
