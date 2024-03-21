@@ -127,10 +127,10 @@ class decisiontree():
 
 if __name__ == '__main__':
     import pandas as pd
-    X_train = pd.read_csv('airfoil_self_noise_X_train.csv').values
-    y_train = pd.read_csv('airfoil_self_noise_y_train.csv').values
-    X_test  = pd.read_csv('airfoil_self_noise_X_test.csv').values
-    y_test  = pd.read_csv('airfoil_self_noise_y_test.csv').values
+    X_train = pd.read_csv('../dataset/airfoil/airfoil_self_noise_X_train.csv').values
+    y_train = pd.read_csv('../dataset/airfoil/airfoil_self_noise_y_train.csv').values
+    X_test  = pd.read_csv('../dataset/airfoil/airfoil_self_noise_X_test.csv').values
+    y_test  = pd.read_csv('../dataset/airfoil/airfoil_self_noise_y_test.csv').values
 
     #DT = decisiontree()
     DT = decisiontree(max_depth=25)

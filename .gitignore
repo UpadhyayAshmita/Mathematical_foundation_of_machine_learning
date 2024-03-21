@@ -5,6 +5,7 @@ datasets/projects/2.bike-data/
 datasets/projects/4.west_nile_virus/
 datasets/projects/13.Mice-Protein-Expression/
 **/.DS_Store
+**/.virtual_documents/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
