@@ -55,6 +55,9 @@ class GradientBoostingDecisionTree:
             y_pred = np.add(y_pred, coeff * itree.predict(X_test).reshape((-1, 1)))
         return y_pred
 
+    # def mae_gradient_descent():
+    # def mae_loss_gradient():
+
     def huber_gradient_descent(self, a, b, lr, epochs):
         alpha = np.random.randn(1)[0]
         for epoch in range(epochs):
