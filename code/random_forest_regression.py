@@ -38,3 +38,4 @@ if __name__ == '__main__':
     RF.fit(X_train, y_train)
     y_pred = RF.predict(X_test)
     print(RMSE(y_pred.ravel(), y_test.ravel()))
+
