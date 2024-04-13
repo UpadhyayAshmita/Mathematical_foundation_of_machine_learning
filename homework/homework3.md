@@ -90,10 +90,14 @@ Under the average probability approach, the average of the estimated probabiliti
 This is a semi report of your project. You need to write a brief summary of your project and the steps you have taken so far.
 
 If you choose the project 1, you need to write 
-1. how you have split the data, 
+1. how you have split the data
+I have splitted one year 2020 as train and 2021 as a test
 2. what models you have used, 
+I have fitted linear regression a simple one and then started building for complex which is random forest for my data.
 3. what are the results of your models,
+The results is accuracy, as in plant breeding even if we have regression data accuracy i.e corelation between predicted estimated breeding value and actual phenotypic observation matters the most to rank the genotype and also I have calculated RMSE to follow standard approach 
 4. how you process the grid search,
+I have eused grid search function
 5. and what are the best parameters you have found.
 
 Also, you need to write what you are planning to do next.
