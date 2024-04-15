@@ -73,13 +73,13 @@ Suppose we produce ten bootstrapped samples from a data set containing red and g
 There are two common ways to combine these results together to produce a single class prediction. One is the majority vote approach, where the most commonly occurring class is predicted. The other is the average probability approach, where the average of the estimated probabilities is taken.
 In this example, what is the final prediction under each of these two approaches?\
 Ans: \
-Majority Vote Approach:
+Majority Vote Approach:\
 In the majority vote approach, we look at each probability estimate and classify each one as a vote for "Green" if the probability is greater than 0.5 (since it indicates that the probability of being Green is more likely than not), and as a vote for "Red" if the probability is 0.5 or less.\
 Votes for Green: 6 (for probabilities 0.55, 0.6, 0.6, 0.65, 0.7, 0.75)\
 Votes for Red: 4 (for probabilities 0.1, 0.15, 0.2, 0.2)\
 Since there are more votes for Green, the majority vote prediction is Green.\
 
-Average Probability Approach
+Average Probability Approach\
 Here, we simply calculate the average of the estimated probabilities and compare the average to 0.5. If the average is greater than 0.5, the prediction is "Green"; otherwise, it's "Red".\
 The average of the probabilities is calculated as follows:\
 Average =(0.1+0.15+0.2+0.2+0.55+0.6+0.6+0.65+0.7+0.75)/ 10 \
@@ -87,19 +87,21 @@ Let's calculate this average to determine the final prediction.\
 Under the average probability approach, the average of the estimated probabilities is 0.45. Since this average is less than 0.5,the final prediction based on the average probability approach is Red.
 
 ## Question 5 
-This is a semi report of your project. You need to write a brief summary of your project and the steps you have taken so far.
+This is a semi report of your project. You need to write a brief summary of your project and the steps you have taken so far.\
 
 If you choose the project 1, you need to write 
-1. how you have split the data
-I have splitted one year 2020 as train and 2021 as a test
-2. what models you have used, 
-I have fitted linear regression a simple one and then started building for complex which is random forest for my data.
-3. what are the results of your models,
-The results is accuracy, as in plant breeding even if we have regression data accuracy i.e corelation between predicted estimated breeding value and actual phenotypic observation matters the most to rank the genotype and also I have calculated RMSE to follow standard approach 
-4. how you process the grid search,
-I have eused grid search function
-5. and what are the best parameters you have found.
+1. how you have split the data\
+I have splitted one year 2020 as train and 2021 as a test\
+2. what models you have used, \
+I have fitted linear regression a simple one and then started building for complex which is random forest for my data.\
+3. what are the results of your models,\
+The results is accuracy, as in plant breeding even if we have regression data accuracy i.e corelation between predicted estimated breeding value and actual phenotypic observation matters the most to rank the genotype and also I have calculated RMSE to follow standard approach.\
+4. how you process the grid search,\
+I have used Instantiate GridSearchCV with the RandomForestRegressor and the parameter grid\
+grid_search = GridSearchCV(estimator=rf_regressor, param_grid=param_grid, cv=10, scoring='neg_mean_squared_error', n_jobs=-1)
 
-Also, you need to write what you are planning to do next.
-
+5. and what are the best parameters you have found.\
+Best Parameters: {'max_depth': 5, 'min_samples_split': 2, 'n_estimators': 50}\
+Also, you need to write what you are planning to do next.\
+I am planning to fit gradient boosting decision tree after this to compare two results.\
 If you choose the project 2, you need to write how you understand the method, what you have done so far, and what you are planning to do next.
