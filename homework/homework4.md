@@ -1,5 +1,5 @@
 ## Homework 4
-This homework is due on 04/29/2024 by 11:59 PM. Homework 4 is about resampling methods and decision trees.
+This homework is due on 04/29/2024 by 11:59 PM. Homework 4 is about deep neural network.
 
 ### Question 1 
 Consider a neural network with two hidden layers: $p=4$ input units, $2$ units in the first hidden layer, $3$ units in the second hidden layer, and a single output.
