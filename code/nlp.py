@@ -32,7 +32,7 @@ x_data = tokenizer.texts_to_sequences(x_data)  # convert our text data to sequen
 
 import numpy as np
 from keras.models import Sequential
-from keras.layers import Embedding, SimpleRNN, LSTM, Dense
+from keras.layers import Embedding, SimpleRNN, LSTM, Dense, GRU
 from sklearn.model_selection import train_test_split
 # from keras.utils import np_utils
 
@@ -50,9 +50,11 @@ x_train, x_test, y_train, y_test = train_test_split(x_data, y_data, test_size=0.
 model = Sequential()
 model.add(Embedding(input_dim=10000, output_dim=128, input_length=max_length))  # Embedding layer
 model.add(SimpleRNN(64))  # You can also try using LSTM or GRU layers
+# model.add(SimpleRNN(64))  # You can also try using LSTM or GRU layers
+# model.add(LSTM(64))  # You can also try using LSTM or GRU layers
+# model.add(GRU(64))  # You can also try using LSTM or GRU layers
 model.add(Dense(1, activation='sigmoid'))  # Output layer
-print(model.summary())
-exit()
+# print(model.summary())
 
 # Compile the model
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
