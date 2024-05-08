@@ -46,3 +46,4 @@ If you encounter any issues or have questions, please refer to the GitLab docume
 Looking forward to a great semester!
 
 [Jiahui Chen](https://jiahuic.github.io/)
+# Mathematical_foundation_of_machine_learning
